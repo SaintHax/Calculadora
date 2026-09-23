@@ -983,7 +983,7 @@
             <div class="input-contenedor">
                 <input id="rv"
                        type="text"
-                       placeholder="Precio + 11% × 2"
+                       placeholder="Precio + 20% × 2"
                        inputmode="decimal">
                 <span class="simbolo-euro">€</span>
             </div>
@@ -1258,8 +1258,8 @@ function repVoge(){
 
     if(p===null)return;
 
-    const conOnce=p+(p*0.11);
-    const pvp=conOnce*2;
+    const conVeinte=p+(p*0.20);
+    const pvp=conVeinte*2;
     const igic=pvp+(pvp*0.07);
 
     mostrarResultado("rv1",pvp);
@@ -1548,7 +1548,7 @@ const __saintPipConfig={
 
         calc(p){
 
-            const pvp=(p+(p*0.11))*2;
+            const pvp=(p+(p*0.20))*2;
 
             return[
                 pvp,
