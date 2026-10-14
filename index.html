@@ -663,7 +663,7 @@
             <div class="input-contenedor">
                 <input id="rc"
                        type="text"
-                       placeholder="Precio + 7% + 5"
+                       placeholder="Precio + 7% + 6"
                        inputmode="decimal">
                 <span class="simbolo-euro">€</span>
             </div>
@@ -875,7 +875,7 @@
             <div class="input-contenedor">
                 <input id="ro"
                        type="text"
-                       placeholder="Precio + 7% + 5"
+                       placeholder="Precio + 7% + 6"
                        inputmode="decimal">
                 <span class="simbolo-euro">€</span>
             </div>
@@ -1185,7 +1185,7 @@ function repCanarias(){
     if(p<5){
         pvp=(p*1.07)*2;
     }else{
-        pvp=(p*1.07)+5;
+        pvp=(p*1.07)+6;
     }
 
     const taller=pvp*1.07;
@@ -1242,7 +1242,7 @@ function repOriginales(){
 
     if(p===null)return;
 
-    const pvp=p+(p*0.07)+5;
+    const pvp=p+(p*0.07)+6;
     const igic=pvp+(pvp*0.07);
 
     mostrarResultado("ro1",pvp);
@@ -1446,7 +1446,7 @@ const __saintPipConfig={
 
             const pvp=p<5
                 ?(p*1.07)*2
-                :(p*1.07)+5;
+                :(p*1.07)+6;
 
             return[pvp,pvp*1.07];
         }
@@ -1500,7 +1500,7 @@ const __saintPipConfig={
 
         calc(p){
 
-            const pvp=p+(p*0.07)+5;
+            const pvp=p+(p*0.07)+6;
 
             return[pvp,pvp*1.07];
         }
